@@ -26,14 +26,33 @@ def test_calculate_average_salary():
     # Arrange
     # Salaries: 50000, 60000, 56000, 70000, 65000, 60000
     # Total = 361000
-    # Average = 361000 / 6 = 60166.666...
-    expected_result = 60166.666666666664
+    # Average = 361000 / 6 = 60166.67 (rounded to 2 decimal places)
+    expected_result = 60166.67
 
     # Act
     result = employee_info.calculate_average_salary()
 
     # Assert
     assert result == expected_result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def test_get_employees_by_dept():
