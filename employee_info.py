@@ -23,17 +23,58 @@ def calculate_average_salary():
     average = 0
 
     #add your implementation to calculate here
-
+    for item in employee_data:
+        employee_salary = item["salary"]
+        total = total + employee_salary
+    average = total / len(employee_data)
 
     return average
+
+# EXAMPLE:
+# Input: department = "Sales"
+# Expected Output: [{"name": "John", "age": 30, "department": "Sales", "salary": 50000},
+#                   {"name": "Peter", "age": 40, "department": "Sales", "salary": 60000}]
 
 def get_employees_by_dept(department):
     result = []
 
     # Add your implementation from here
-
+    for item in employee_data:
+        if item["department"] == department:
+            result.append(item)
 
     return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def display_all_records():
     print(("Name" + "\t" +"Age" +"\t" +"Department" +"\t" +"Salary" ).expandtabs(15))
